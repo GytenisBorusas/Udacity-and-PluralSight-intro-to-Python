@@ -4,7 +4,6 @@
     Date created: 12/10/2016
     Date last modified: 12/10/2016
     Python Version: 3.5
-
     A shopping list.
 '''
 
