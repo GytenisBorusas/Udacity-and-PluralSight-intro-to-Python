@@ -2,7 +2,7 @@
     File name: shopping_order.py
     Author: Gytenis Borusas
     Date created: 12/10/2016
-    Date last modified: 12/10/2016
+    Date last modified: 12/11/2016
     Python Version: 3.5
 
     Edited shopping list program according to pluralsight.com Object
@@ -12,7 +12,8 @@
 
 class Order:
 
-    def __init__(self):
+    def __init__(self):     # Initializes all imput variables as
+        # false in the beggining.
         self.quit = False
         self.add = False
         self.delete = False
@@ -23,12 +24,17 @@ class Order:
               "q to quit) ")
         line = input()
 
-        command = line[:1]
-        self.item = line[2:]
+        command = line[:1]      # Reads one line imput as two
+        # separate variables.
+        self.item = line[2:]         # Reads one line imput as two
+        # separate variables.
 
-        if command == "a":
+        if command == "a":      # Defines what first part of command
+            # means.
             self.add = True
-        elif command == "d":
+        elif command == "d":      # Defines what first part of command
+            # means.
             self.delete = True
-        elif command == "q":
+        elif command == "q":      # Defines what first part of command
+            # means.
             self.quit = True
